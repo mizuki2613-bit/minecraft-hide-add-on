@@ -11,10 +11,8 @@ scoreboard players set @a[scores={walk=1..}] walk 0
 scoreboard players set @a[scores={dash=1..}] dash 0
 scoreboard players set @a[scores={crouch=1..}] crouch 0
 
-#show
-execute as @a[tag=hiding] at @s unless items entity @s weapon.offhand clock[custom_data={hide_stick:1b}] run function hide:show
-execute as @a[tag=hiding] at @s if block ~ ~ ~ #air run function hide:show
-execute as @a[tag=hiding] at @s unless entity @s[nbt={RootVehicle:{}}] run function hide:show
+#hiding
+execute as @a[tag=hiding] at @s run function hide:hiding
 
 #hide
 #~-0.00001 is the offset used to retrieve the block the player is standing on.
