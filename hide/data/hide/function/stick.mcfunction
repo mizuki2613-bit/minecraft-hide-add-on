@@ -1,1 +1,1 @@
-give @s clock[item_name=[{text:"Transform into block","bold":true}],rarity=epic,item_model="stick",custom_data={hide_stick:1b},enchantment_glint_override=true,!max_stack_size,tool={can_destroy_blocks_in_creative:false,rules:[]}]
+give @s clock[item_name=[{text:"Transform into block",bold:1}],rarity=epic,item_model=stick,custom_data={hide_stick:1},enchantment_glint_override=1,!max_stack_size,tool={can_destroy_blocks_in_creative:0,rules:[]}]
