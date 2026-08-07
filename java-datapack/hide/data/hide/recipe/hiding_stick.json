@@ -15,7 +15,7 @@
 			"minecraft:rarity": "epic",
 			"minecraft:item_model": "minecraft:stick",
 			"minecraft:enchantment_glint_override": true,
-			"minecraft:custom_data": { "hide_stick": 1 },
+			"minecraft:custom_data": { "hide_stick": true },
 			"minecraft:max_stack_size": 1,
 			"minecraft:tool": {
 				"can_destroy_blocks_in_creative": false,
