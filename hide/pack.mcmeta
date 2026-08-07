@@ -1,7 +1,0 @@
-{
-  "pack": {
-    "description": "You can turn into a block!",
-    "min_format": [107, 1],
-    "max_format": [107, 1]
-  }
-}

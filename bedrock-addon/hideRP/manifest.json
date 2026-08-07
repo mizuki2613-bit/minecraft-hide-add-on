@@ -1,0 +1,28 @@
+{
+	"format_version": 3,
+	"header": {
+		"name": "Hide Addon RP",
+		"description": "Hide behind blocks - Resource Pack",
+		"uuid": "91d61a4b-394c-485a-bc8f-f1282fce9862",
+		"version": "2.0.0",
+		"min_engine_version": "1.26.50",
+		"pack_scope": "world"
+	},
+	"metadata": {
+		"authors": ["mizuki2613"],
+		"generated_with": { "VS Code": ["1.130.0"] }
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "0bfd4c88-f390-4709-afcf-243679eb0185",
+			"version": "1.0.0"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "ea7179a4-9cea-46ef-a4fa-7e0809895109",
+			"version": "2.0.0"
+		}
+	]
+}

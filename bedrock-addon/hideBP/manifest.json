@@ -1,0 +1,39 @@
+{
+	"format_version": 3,
+	"header": {
+		"name": "Hide Addon BP",
+		"description": "Hide behind blocks - Behavior Pack",
+		"uuid": "ea7179a4-9cea-46ef-a4fa-7e0809895109",
+		"version": "2.0.0",
+		"min_engine_version": "1.26.50"
+	},
+	"metadata": {
+		"authors": ["mizuki2613", "King of Dedede"],
+		"generated_with": { "VS Code": ["1.130.0"] },
+		"product_type": "addon"
+	},
+	"modules": [
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "d2c6ed12-dc60-4b65-9e35-4813e60d4d61",
+			"entry": "scripts/main.js",
+			"version": "1.0.0"
+		},
+		{
+			"type": "data",
+			"uuid": "81f82a77-43ea-4b17-9008-ec534bc3ce7b",
+			"version": "1.0.0"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.10.0"
+		},
+		{
+			"uuid": "91d61a4b-394c-485a-bc8f-f1282fce9862",
+			"version": "2.0.0"
+		}
+	]
+}

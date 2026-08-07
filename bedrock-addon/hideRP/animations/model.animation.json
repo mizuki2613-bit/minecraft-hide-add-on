@@ -1,0 +1,17 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.mimic_block.arrow_rotation": {
+			"loop": true,
+			"animation_length": 1.05,
+			"bones": {
+				"arrow": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.05": [0, -360, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.player.holding": {
+			"loop": true,
+			"bones": {
+				"leftarm": {
+					"rotation": [
+						"v.is_holding_left ? (-this * 0.5 - 18.0) : 0.0",
+						0.0,
+						0.0
+					]
+				},
+				"rightarm": {
+					"rotation": [
+						"v.is_holding_right ? (-this * 0.5 - 18.0) : 0.0",
+						0.0,
+						0.0
+					]
+				},
+				"rightItem": {
+					"scale": "(q.is_alive && q.property('hide:is_hiding')) ? 0.0 : 1.0"
+				},
+				"leftItem": {
+					"scale": "(q.is_alive && q.property('hide:is_hiding')) ? 0.0 : 1.0"
+				}
+			}
+		}
+	}
+}
