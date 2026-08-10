@@ -9,5 +9,5 @@ setblock ~ ~ ~ air
 attribute @s scale base reset
 effect clear @s invisibility
 team leave @s
-scoreboard players reset @s hiding_time
+scoreboard players reset @s hide.hiding_time
 tag @s remove hiding

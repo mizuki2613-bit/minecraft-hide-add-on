@@ -1,5 +1,5 @@
 tag @s add hiding
-scoreboard players set @s countdown 0
+scoreboard players set @s hide.countdown 0
 attribute @s scale base set 0
 effect give @s invisibility infinite 0 true
 team join hide @s

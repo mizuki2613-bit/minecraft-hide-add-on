@@ -6,14 +6,13 @@
 	},
 	"pattern": ["  #", " # ", "#  "],
 	"result": {
-		"id": "minecraft:clock",
+		"id": "minecraft:stick",
 		"components": {
 			"minecraft:item_name": {
 				"text": "Transform into block",
 				"bold": true
 			},
 			"minecraft:rarity": "epic",
-			"minecraft:item_model": "minecraft:stick",
 			"minecraft:enchantment_glint_override": true,
 			"minecraft:custom_data": { "hide_stick": true },
 			"minecraft:max_stack_size": 1,
