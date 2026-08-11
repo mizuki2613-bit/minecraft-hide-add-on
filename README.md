@@ -1,2 +1,15 @@
-# minecraft-hide-block-datapack
-Please feel free to use it.
+# Minecraft Hide Block Datapack
+
+ブロックに変身できるMinecraftデータパック
+
+## インストール方法
+
+1. このリポジトリをダウンロードします
+2. ダウンロードしたファイルをMinecraftのワールドフォルダ内の `datapacks` ディレクトリに配置します
+3. ワールドを再度読み込みするか、`/reload` コマンドを実行します
+
+## 使い方
+
+1.作業台でアイテム「Transform into block」を作成し、オフハンドに持ちます。
+2.変身したいブロック(ほとんどのフルブロックに隠れることができます。)をメインハンドに持ち、スニークキーを押さず5秒ほど待機します。プレイヤーがいるブロックが空気以外だと変身することができません。
+3.
