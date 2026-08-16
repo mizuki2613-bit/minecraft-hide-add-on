@@ -11,3 +11,6 @@ effect clear @s invisibility
 team leave @s
 scoreboard players reset @s hide.hiding_time
 tag @s remove hiding
+
+gamemode survival @s[scores={hide.gamemode=0}]
+gamemode creative @s[scores={hide.gamemode=1}]
