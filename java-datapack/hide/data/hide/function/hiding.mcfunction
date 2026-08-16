@@ -10,4 +10,4 @@ execute if entity @s[scores={hide.hiding_time=10}] run particle minecraft:dust{c
 execute unless items entity @s weapon.mainhand * unless items entity @s weapon.offhand * run scoreboard players reset @s hide.hiding_time
 
 #gamemode
-gamemode adventure
+gamemode adventure @s[tag=hiding]
