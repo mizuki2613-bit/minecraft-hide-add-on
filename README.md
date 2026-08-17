@@ -1,6 +1,6 @@
 # Minecraft Hide Datapack & Add-On
 
-プレイヤーがブロックに変身できるMinecraftのデータパック及びアドオンです。
+プレイヤーが周囲のブロックに変身して身を隠す、Prop Hunt系のMinecraftDatapck/Add-ONです。
 
 ### Java版の対応バージョン
 
