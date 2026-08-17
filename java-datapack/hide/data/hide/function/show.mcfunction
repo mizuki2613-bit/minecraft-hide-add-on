@@ -14,3 +14,4 @@ tag @s remove hiding
 
 gamemode survival @s[scores={hide.gamemode=0}]
 gamemode creative @s[scores={hide.gamemode=1}]
+scoreboard players reset @s hide.gamemode

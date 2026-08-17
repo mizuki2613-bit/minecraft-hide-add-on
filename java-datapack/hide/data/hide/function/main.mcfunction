@@ -7,9 +7,9 @@ title @a[scores={hide.countdown=1..},nbt={OnGround:false}] actionbar ""
 #check if can hide behind block
 execute as @a run function hide:countdown
 
-scoreboard players set @a[scores={hide.walk=1..}] hide.walk 0
-scoreboard players set @a[scores={hide.dash=1..}] hide.dash 0
-scoreboard players set @a[scores={hide.crouch=1..}] hide.crouch 0
+scoreboard players reset @a[scores={hide.walk=1..}] hide.walk
+scoreboard players reset @a[scores={hide.dash=1..}] hide.dash
+scoreboard players reset @a[scores={hide.crouch=1..}] hide.crouch
 
 #hiding
 execute as @a[tag=hiding] at @s run function hide:hiding
