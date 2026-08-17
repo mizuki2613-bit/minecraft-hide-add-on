@@ -8,7 +8,7 @@
 		"min_engine_version": "1.26.50"
 	},
 	"metadata": {
-		"authors": ["mizuki2613", "King of Dedede"],
+		"authors": ["mizuki2613"],
 		"generated_with": { "VS Code": ["1.130.0"] },
 		"product_type": "addon"
 	},
