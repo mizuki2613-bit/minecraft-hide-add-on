@@ -2,6 +2,8 @@
 
 プレイヤーがブロックに変身できるMinecraftのデータパック及びアドオンです。
 
+Java Editionは 26.2 Snapshot 6 ~ 26.3 Snapshot 3までサポートしています。
+
 ## インストール方法
 
 ### Java版
