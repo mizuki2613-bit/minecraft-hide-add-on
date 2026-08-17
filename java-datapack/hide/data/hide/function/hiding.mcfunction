@@ -9,5 +9,6 @@ execute if entity @s[scores={hide.hiding_time=25..}] run scoreboard players rese
 execute if entity @s[scores={hide.hiding_time=10}] run particle minecraft:dust{color:[0.5,0.5,0.5],scale:1} ~ ~ ~ 0.5 0.5 0.5 0 50 force
 execute unless items entity @s weapon.mainhand * unless items entity @s weapon.offhand * run scoreboard players reset @s hide.hiding_time
 
-#gamemode
-gamemode adventure @s[tag=hiding]
+#Prevent changes
+gamemode adventure @s[tag=hide.hiding]
+effect give @s[tag=hide.hiding] invisibility infinite 0 true
