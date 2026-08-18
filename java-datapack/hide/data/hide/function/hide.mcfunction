@@ -16,8 +16,8 @@ function hide:place_block with storage hide:tmp
 data remove storage hide:tmp item
 
 #mount
-summon villager ~ ~ ~ {NoAI:1,Silent:1,Invulnerable:1,DeathTime:10000,Tags:[hide.vehicle],Team:"hide.hiding_team",active_effects:[{id:invisibility,duration:-1,show_particles:0}],attributes:[{id:scale,base:0.4983},{id:max_health,base:0}],Inventory: [{id:barrier,components:{custom_data:{blank:1}}},{id:barrier,components:{custom_data:{blank:1}}},{id:barrier,components:{custom_data:{blank:1}}},{id:barrier,components:{custom_data:{blank:1}}},{id:barrier,components:{custom_data:{blank:1}}}]}
+summon villager ~ ~ ~ {NoAI:1,Silent:1,Invulnerable:1,DeathTime:10000,Tags:[hide.vehicle],Team:"hide.hiding_team",active_effects:[{id:invisibility,duration:-1,show_particles:0}],attributes:[{id:scale,base:0.4983},{id:max_health,base:0}],Inventory: [{id:potion,components:{custom_data:{blank:1}}},{id:potion,components:{custom_data:{blank:1}}},{id:potion,components:{custom_data:{blank:1}}},{id:potion,components:{custom_data:{blank:1}}},{id:potion,components:{custom_data:{blank:1}}}]}
 ride @s mount @n[tag=hide.vehicle,distance=0]
 
 #store items
-execute on vehicle run function hide:store_items
+function hide:store_items {store:"@n[tag=hide.vehicle,distance=0]"}
