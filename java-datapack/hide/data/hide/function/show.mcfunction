@@ -2,7 +2,7 @@ advancement revoke @s only hide:hurt
 execute unless entity @s[tag=hide.hiding] run return fail
 
 #restore items
-execute align xyz positioned ~0.5 ~ ~0.5 as @n[tag=hide.vehicle,distance=0] run function hide:restore_items
+execute align xyz positioned ~0.5 ~ ~0.5 run function hide:restore_items {target:"@n[tag=hide.vehicle,distance=0]"}
 
 #reset player
 setblock ~ ~ ~ air
