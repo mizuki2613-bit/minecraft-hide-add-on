@@ -8,10 +8,9 @@ $execute if items entity @s weapon.mainhand * run item replace entity $(store) m
 $execute on passengers if items entity $(store) weapon.offhand * run item replace entity $(store) mob.inventory.4 from entity $(store) weapon.offhand
 $execute on passengers if items entity $(store) weapon.mainhand * run item replace entity $(store) mob.inventory.5 from entity $(store) weapon.mainhand
 
-#clear equipment
-item replace entity @s armor.head with air
-item replace entity @s armor.chest with air
-item replace entity @s armor.legs with air
-item replace entity @s armor.feet with air
-item replace entity @s weapon.offhand with air
-item replace entity @s weapon.mainhand with air
+item replace entity @p[tag=hide.hiding] armor.head with air
+item replace entity @p[tag=hide.hiding] armor.chest with air
+item replace entity @p[tag=hide.hiding] armor.legs with air
+item replace entity @p[tag=hide.hiding] armor.feet with air
+item replace entity @p[tag=hide.hiding] weapon.offhand with air
+item replace entity @p[tag=hide.hiding] weapon.mainhand with air
