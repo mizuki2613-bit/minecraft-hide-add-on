@@ -13,4 +13,4 @@ execute as @a if score @s hide.count >= HIDE_READY hide.count at @s align xyz po
 
 #actionbar
 #To prevent the action bar from appearing every time there is a small movement, it will only be displayed when the countdown reaches 3 or higher.
-execute as @a[scores={hide.count=3..}] at @s align xyz positioned ~0.5 ~ ~0.5 run function hide:progress_bar
+execute as @a[scores={hide.count=3..}] at @s align xyz positioned ~0.5 ~ ~0.5 run function hide:actionbar
