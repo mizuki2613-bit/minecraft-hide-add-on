@@ -1,13 +1,19 @@
-execute if items entity @p[tag=hide.hiding] armor.head * run item replace entity @s mob.inventory.0 from entity @p[tag=hide.hiding] armor.head
-execute if items entity @p[tag=hide.hiding] armor.chest * run item replace entity @s mob.inventory.1 from entity @p[tag=hide.hiding] armor.chest
-execute if items entity @p[tag=hide.hiding] armor.legs * run item replace entity @s mob.inventory.2 from entity @p[tag=hide.hiding] armor.legs
-execute if items entity @p[tag=hide.hiding] armor.feet * run item replace entity @s mob.inventory.3 from entity @p[tag=hide.hiding] armor.feet
-execute if items entity @p[tag=hide.hiding] weapon.offhand * run item replace entity @s mob.inventory.4 from entity @p[tag=hide.hiding] weapon.offhand
-execute if items entity @p[tag=hide.hiding] weapon.mainhand * run item replace entity @s mob.inventory.5 from entity @p[tag=hide.hiding] weapon.mainhand
+# Store equipment
+execute on passengers if items entity @s armor.head * run item replace entity @n[tag=hide.vehicle,distance=0] mob.inventory.0 from entity @s armor.head
+execute on passengers if items entity @s armor.chest * run item replace entity @n[tag=hide.vehicle,distance=0] mob.inventory.1 from entity @s armor.chest
+execute on passengers if items entity @s armor.legs * run item replace entity @n[tag=hide.vehicle,distance=0] mob.inventory.2 from entity @s armor.legs
+execute on passengers if items entity @s armor.feet * run item replace entity @n[tag=hide.vehicle,distance=0] mob.inventory.3 from entity @s armor.feet
 
-item replace entity @p[tag=hide.hiding] armor.head with air
-item replace entity @p[tag=hide.hiding] armor.chest with air
-item replace entity @p[tag=hide.hiding] armor.legs with air
-item replace entity @p[tag=hide.hiding] armor.feet with air
-item replace entity @p[tag=hide.hiding] weapon.offhand with air
-item replace entity @p[tag=hide.hiding] weapon.mainhand with air
+# Store offhand
+execute on passengers if items entity @s weapon.offhand * run item replace entity @n[tag=hide.vehicle,distance=0] mob.inventory.4 from entity @s weapon.offhand
+
+# Store mainhand
+execute on passengers if items entity @s weapon.mainhand * run item replace entity @n[tag=hide.vehicle,distance=0] mob.inventory.5 from entity @s weapon.mainhand
+
+# Clear equipment
+execute on passengers run item replace entity @s armor.head with air
+execute on passengers run item replace entity @s armor.chest with air
+execute on passengers run item replace entity @s armor.legs with air
+execute on passengers run item replace entity @s armor.feet with air
+execute on passengers run item replace entity @s weapon.offhand with air
+execute on passengers run item replace entity @s weapon.mainhand with air
