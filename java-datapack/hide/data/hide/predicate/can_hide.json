@@ -11,7 +11,7 @@
 		},
 		{
 			"condition": "minecraft:location_check",
-			"offset": [0, 1, 0],
+			"offsetY": 1,
 			"predicate": {
 				"block": {
 					"blocks": "#minecraft:air"
@@ -19,11 +19,14 @@
 			}
 		},
 		{
-			"condition": "minecraft:location_check",
-			"offset": [0, -1, 0],
-			"predicate": {
-				"block": {
-					"blocks": "#hide:not_full"
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:location_check",
+				"offsetY": -1,
+				"predicate": {
+					"block": {
+						"blocks": "#hide:not_full"
+					}
 				}
 			}
 		},

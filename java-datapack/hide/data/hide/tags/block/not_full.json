@@ -1,9 +1,7 @@
 {
 	"values": [
 		"#minecraft:air",
-		"#minecraft:anvil",
 		"#minecraft:slabs",
-		"#minecraft:stairs",
 		"#minecraft:buttons",
 		"#minecraft:all_signs",
 		"#minecraft:rails",
@@ -19,7 +17,6 @@
 		"#minecraft:saplings",
 		"#minecraft:fences",
 		"#minecraft:fence_gates",
-		"#minecraft:walls",
 		"#minecraft:bars",
 		"#minecraft:chains",
 		"#minecraft:lanterns",
