@@ -1,6 +1,6 @@
 {
 	"values": [
-		"#minecraft:air",
+		"#minecraft:replaceable",
 		"#minecraft:slabs",
 		"#minecraft:buttons",
 		"#minecraft:all_signs",
@@ -33,12 +33,9 @@
 		"minecraft:pointed_dripstone",
 		"minecraft:moss_carpet",
 		"minecraft:pale_moss_carpet",
-		"minecraft:snow",
 		"minecraft:repeater",
 		"minecraft:comparator",
 		"minecraft:redstone_wire",
-		"minecraft:water",
-		"minecraft:lava",
 		"minecraft:lever",
 		"minecraft:dried_ghast",
 		"minecraft:warped_fungus",
@@ -63,8 +60,6 @@
 		"minecraft:sculk_shrieker",
 		"minecraft:lightning_rod",
 		"minecraft:sculk_vein",
-		"minecraft:glow_lichen",
-		"minecraft:vine",
 		"minecraft:ladder",
 		"minecraft:torch",
 		"minecraft:soul_torch",
@@ -83,21 +78,14 @@
 		"minecraft:pitcher_plant",
 		"minecraft:torchflower",
 		"minecraft:nether_wart",
-		"minecraft:light",
-		"minecraft:structure_void",
 		"minecraft:kelp",
 		"minecraft:kelp_plant",
-		"minecraft:seagrass",
-		"minecraft:tall_seagrass",
 		"minecraft:twisting_vines",
 		"minecraft:twisting_vines_plant",
 		"minecraft:weeping_vines",
 		"minecraft:weeping_vines_plant",
-		"minecraft:hanging_roots",
 		"minecraft:spore_blossom",
-		"minecraft:nether_sprouts",
 		"minecraft:azalea",
-		"minecraft:flowering_azalea",
-		"minecraft:bubble_column"
+		"minecraft:flowering_azalea"
 	]
 }
