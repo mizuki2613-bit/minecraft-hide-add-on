@@ -5,11 +5,11 @@
 		"description": "Hide behind blocks - Behavior Pack",
 		"uuid": "ea7179a4-9cea-46ef-a4fa-7e0809895109",
 		"version": "2.0.0",
-		"min_engine_version": "1.26.50"
+		"min_engine_version": "1.26.40"
 	},
 	"metadata": {
 		"authors": ["mizuki2613"],
-		"generated_with": { "VS Code": ["1.130.0"] },
+		"generated_with": { "VS Code": ["1.134.0"] },
 		"product_type": "addon"
 	},
 	"modules": [
@@ -29,7 +29,7 @@
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server",
-			"version": "2.10.0"
+			"version": "2.9.0"
 		},
 		{
 			"uuid": "91d61a4b-394c-485a-bc8f-f1282fce9862",
