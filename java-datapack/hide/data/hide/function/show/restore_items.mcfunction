@@ -9,7 +9,7 @@ $execute unless items entity $(target) mob.inventory.4 $(ignore) run item replac
 
 # Restore mainhand
 $execute unless items entity $(target) mob.inventory.5 $(ignore) run summon item ~ ~ ~ {Tags:[hide.drop_mainhand],Item:{id:stone}}
-data modify entity @n[tag=hide.drop_mwainhand,distance=0] Owner set from entity @s UUID
+data modify entity @n[tag=hide.drop_mainhand,distance=0] Owner set from entity @s UUID
 $data modify entity @n[tag=hide.drop_mainhand,distance=0] Item set from entity $(target) Inventory[5]
 
 # Remove vehicle
