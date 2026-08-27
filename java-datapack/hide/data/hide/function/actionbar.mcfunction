@@ -1,9 +1,9 @@
 # Progress bar
-execute if score @s hide.count matches 0..9 run return run title @s actionbar [{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"}]
-execute if score @s hide.count matches 10..19 run return run title @s actionbar [{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"}]
-execute if score @s hide.count matches 20..29 run return run title @s actionbar [{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"}]
-execute if score @s hide.count matches 30..39 run return run title @s actionbar [{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"}]
-execute if score @s hide.count matches 40..49 run return run title @s actionbar [{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp","color":"gray"}]
+execute if score @s hide.count matches 0..9 run return run function hide:progress_bar/0
+execute if score @s hide.count matches 10..19 run return run function hide:progress_bar/1
+execute if score @s hide.count matches 20..29 run return run function hide:progress_bar/2
+execute if score @s hide.count matches 30..39 run return run function hide:progress_bar/3
+execute if score @s hide.count matches 40..49 run return run function hide:progress_bar/4
 
 
 # Error message

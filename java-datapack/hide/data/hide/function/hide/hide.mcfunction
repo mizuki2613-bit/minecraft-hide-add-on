@@ -3,16 +3,13 @@ tag @s add hide.hiding
 team join hide.hiding_team @s
 scoreboard players reset @s hide.count
 attribute @s scale base set 0
-effect give @s invisibility infinite 0 true
 playsound block.composter.ready master @s ~ ~ ~
 scoreboard players reset @s hide.gamemode
 scoreboard players set @s[gamemode=survival] hide.gamemode 0
 scoreboard players set @s[gamemode=creative] hide.gamemode 1
 
 # Place block
-data modify storage hide:tmp item set from entity @s SelectedItem.id
-function hide:place_block with storage hide:tmp
-data remove storage hide:tmp item
+function hide:hide/place_block with entity @s SelectedItem
 
 # Mount
 # Use a non-stackable item to prevent items from stacking.
@@ -20,7 +17,7 @@ summon villager ~ ~ ~ {NoAI:1b,Silent:1b,Invulnerable:1b,DeathTime:32767,Tags:[h
 ride @s mount @n[tag=hide.vehicle,distance=0]
 
 # Store items
-function hide:store_items {store:"@n[tag=hide.vehicle,distance=0]"}
+function hide:hide/store_items {store:"@n[tag=hide.vehicle,distance=0]"}
 
-#show full progressbar
-title @s actionbar [{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"},{"sprite":"block/redstone_lamp_on"}]
+# Progress bar
+function hide:progress_bar/5

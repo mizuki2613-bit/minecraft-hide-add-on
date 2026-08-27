@@ -1,0 +1,1 @@
+title @s actionbar [{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"},{"sprite":"block/redstone_lamp","color":"gray"}]

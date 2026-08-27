@@ -5,8 +5,6 @@ $execute if items entity @s armor.legs * run item replace entity $(store) mob.in
 $execute if items entity @s armor.feet * run item replace entity $(store) mob.inventory.3 from entity @s armor.feet
 $execute if items entity @s weapon.offhand * run item replace entity $(store) mob.inventory.4 from entity @s weapon.offhand
 $execute if items entity @s weapon.mainhand * run item replace entity $(store) mob.inventory.5 from entity @s weapon.mainhand
-$execute on passengers if items entity $(store) weapon.offhand * run item replace entity $(store) mob.inventory.4 from entity $(store) weapon.offhand
-$execute on passengers if items entity $(store) weapon.mainhand * run item replace entity $(store) mob.inventory.5 from entity $(store) weapon.mainhand
 
 # Clear items
 item replace entity @s armor.head with air
