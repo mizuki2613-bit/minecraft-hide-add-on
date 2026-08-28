@@ -1,5 +1,8 @@
 {
 	"values": [
+		"#hide:26_2",
+		"#hide:glass_panes",
+		"#hide:skulls",
 		"#minecraft:replaceable",
 		"#minecraft:slabs",
 		"#minecraft:buttons",
@@ -23,13 +26,10 @@
 		"#minecraft:crops",
 		"#minecraft:campfires",
 		"#minecraft:doors",
-		"#hide:glass_panes",
-		"#hide:skulls",
 		"minecraft:end_rod",
 		"minecraft:mud",
 		"minecraft:dirt_path",
 		"minecraft:farmland",
-		"minecraft:sulfur_spike",
 		"minecraft:pointed_dripstone",
 		"minecraft:moss_carpet",
 		"minecraft:pale_moss_carpet",
