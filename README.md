@@ -4,7 +4,7 @@
 
 ### Java Edition の対応バージョン
 
-Minecraft Java Edition 26.2 Snapshot 6 ~ 26.3 Snapshot 3  
+Minecraft Java Edition 26.1 Snapshot 1 ~ 26.3 Snapshot 3  
 ※ 上記バージョンを対象としており、それ以外のバージョンでは動作しません。
 
 ## インストール方法
