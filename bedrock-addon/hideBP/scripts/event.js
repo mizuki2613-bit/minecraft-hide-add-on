@@ -1,11 +1,11 @@
-import { world, system, Player, ItemStack } from "@minecraft/server";
+import { world, Player } from "@minecraft/server";
 import { getState, deleteState } from "./state.js";
 import { leaveHideMode } from "./hide.js";
 
 const mimic_block_lore = [
-	"§7メインハンドにブロック、",
-	"§7オフハンドにこのアイテムを持つと",
-	"§7ブロックに変身できます。",
+	{ translate: "item.mimic_block.lore.1" },
+	{ translate: "item.mimic_block.lore.2" },
+	{ translate: "item.mimic_block.lore.3" },
 ];
 
 function setMimicBlockLore(item) {

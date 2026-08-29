@@ -1,4 +1,10 @@
-action.hint.exit.hide:anchor=Tap sneak to dismount
-action.hint.exit.scheme.hide:anchor=Tap dismount to dismount
-action.hint.exit.console.hide:anchor=Press :_input_key.sneak: to dismount
+action.hint.exit.hide:anchor=Tap sneak to stop transforming
+action.hint.exit.scheme.hide:anchor=Tap dismount to stop transforming
+action.hint.exit.console.hide:anchor=Press :_input_key.sneak: to stop transforming
 item.mimic_block.name=Mimic Block
+item.mimic_block.lore.1=§7Hold a block in your main hand,
+item.mimic_block.lore.2=§7and this item in your off-hand
+item.mimic_block.lore.3=§7to transform into the block.
+hide.actionbar.error.1=You can't hide here.
+hide.actionbar.error.2=Your head is blocked.
+hide.actionbar.error.3=Please stand on the ground.
