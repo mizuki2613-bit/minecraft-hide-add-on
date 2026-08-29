@@ -12,7 +12,8 @@
 			"minecraft:icon": "mimic_block",
 			"minecraft:hand_equipped": true,
 			"minecraft:allow_off_hand": true,
-			"minecraft:max_stack_size": 1
+			"minecraft:max_stack_size": 1,
+			"minecraft:rarity": "rare"
 		}
 	}
 }
