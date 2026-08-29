@@ -5,16 +5,15 @@
 			"identifier": "hide:mimic_block"
 		},
 		"tags": ["crafting_table"],
-		"pattern": ["AB"],
+		"pattern": ["###", "#X#", "###"],
 		"key": {
-			"A": { "item": "minecraft:stick" },
-			"B": { "item": "minecraft:dirt" }
+			"X": { "item": "minecraft:stick" },
+			"#": { "item": "minecraft:dirt" }
 		},
 		"unlock": [{ "item": "minecraft:stick" }, { "item": "minecraft:dirt" }],
 		"priority": 1,
 		"result": {
-			"item": "hide:mimic_block",
-			"count": 1
+			"item": "hide:mimic_block"
 		}
 	}
 }
