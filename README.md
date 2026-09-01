@@ -12,13 +12,13 @@ Minecraft Java Edition 26.1 ~ 26.3 Snapshot 3
 ### Java Edition
 
 1. [Releases](../../releases) ページから最新の`Hide-Datapack.zip` をダウンロードします。
-2. ダウンロードした`Hide-DataPack.zip` を Minecraft のワールドフォルダ内の datapacks フォルダに配置します。
+2. ダウンロードしたファイルを Minecraft のワールドフォルダ内の datapacks フォルダに配置します。
 3. ワールドを再読み込みするか、`/reload` コマンドを実行します。
 
 ### Bedrock Edition
 
 1. [Releases](../../releases) ページから最新の`Hide-Add-On.mcpack` をダウンロードします。
-2. ダウンロードした`Hide-Add-On.mcpack` をダブルクリックしてインストールします。
+2. ダウンロードしたファイルをダブルクリックしてインストールします。
 3. 既存のワールドまたは新規作成するワールドでビヘイビアーパックとリソースパックを有効にします。
 
 ## 使い方
