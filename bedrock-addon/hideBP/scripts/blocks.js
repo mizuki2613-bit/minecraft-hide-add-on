@@ -52,7 +52,7 @@ const copper_chests = new Set([
 	"minecraft:waxed_oxidized_copper_chest",
 ]);
 const shulker_boxes = new Set([
-	"minecraft:shulker_box",
+	"minecraft:undyed_shulker_box",
 	"minecraft:white_shulker_box",
 	"minecraft:orange_shulker_box",
 	"minecraft:magenta_shulker_box",
@@ -85,13 +85,14 @@ const redstone = new Set([
 	"minecraft:target",
 	"minecraft:dispenser",
 	"minecraft:dropper",
+	"minecraft:observer",
+	"minecraft:slime",
 ]);
 
 const natural = new Set([
 	...leaves,
 	"minecraft:reinforced_deepslate",
 	"minecraft:honey_block",
-	"minecraft:slime_block",
 	"minecraft:bookshelf",
 	"minecraft:decorated_pot",
 	"minecraft:mangrove_roots",
@@ -107,6 +108,13 @@ const natural = new Set([
 	"minecraft:bee_nest",
 	"minecraft:chorus_plant",
 	"minecraft:chorus_flower",
+	"minecraft:dragon_egg",
+	"minecraft:sniffer_egg",
+	"minecraft:mob_spawner",
+	"minecraft:trial_spawner",
+	"minecraft:vault",
+	"minecraft:creaking_heart",
+	"minecraft:end_portal_frame",
 ]);
 
 const functional = new Set([
@@ -130,6 +138,7 @@ const functional = new Set([
 	"minecraft:trapped_chest",
 	"minecraft:ender_chest",
 	"minecraft:barrel",
+	"minecraft:respawn_anchor",
 ]);
 
 const operatorUtility = new Set([
@@ -138,9 +147,60 @@ const operatorUtility = new Set([
 	"minecraft:repeating_command_block",
 	"minecraft:structure_block",
 	"minecraft:jigsaw",
+	"minecraft:allow",
+	"minecraft:deny",
+	"minecraft:barrier",
+	"minecraft:info_update",
+	"minecraft:info_update2",
+	"minecraft:reserved6",
+	"minecraft:unknown",
+	"minecraft:glowingobsidian",
+	"minecraft:frosted_ice",
+	"minecraft:stonecutter",
+	"minecraft:invisible_bedrock",
+	"minecraft:camera",
+	"minecraft:netherreactor",
+	"minecraft:border_block",
+]);
+
+const Infested = new Set([
+	"minecraft:infested_stone",
+	"minecraft:infested_cobblestone",
+	"minecraft:infested_stone_bricks",
+	"minecraft:infested_mossy_stone_bricks",
+	"minecraft:infested_cracked_stone_bricks",
+	"minecraft:infested_chiseled_stone_bricks",
+	"minecraft:infested_deepslate",
 ]);
 
 const food = new Set(["minecraft:cake"]);
+
+const Education = new Set([
+	"minecraft:hard_glass",
+	"minecraft:hard_white_stained_glass",
+	"minecraft:hard_orange_stained_glass",
+	"minecraft:hard_magenta_stained_glass",
+	"minecraft:hard_light_blue_stained_glass",
+	"minecraft:hard_yellow_stained_glass",
+	"minecraft:hard_lime_stained_glass",
+	"minecraft:hard_pink_stained_glass",
+	"minecraft:hard_gray_stained_glass",
+	"minecraft:hard_light_gray_stained_glass",
+	"minecraft:hard_cyan_stained_glass",
+	"minecraft:hard_purple_stained_glass",
+	"minecraft:hard_blue_stained_glass",
+	"minecraft:hard_brown_stained_glass",
+	"minecraft:hard_green_stained_glass",
+	"minecraft:hard_red_stained_glass",
+	"minecraft:hard_black_stained_glass",
+	"minecraft:element_constructor",
+	"minecraft:compound_creator",
+	"minecraft:lab_table",
+	"minecraft:material_reducer",
+	"minecraft:chemical_heat",
+	"minecraft:underwater_tnt",
+	...Array.from({ length: 119 }, (_, i) => `minecraft:element_${i}`),
+]);
 
 const ALLOWED_ITEMS = new Set([
 	...glass,
@@ -150,6 +210,8 @@ const ALLOWED_ITEMS = new Set([
 	...operatorUtility,
 	...food,
 	...copper_grates,
+	...Infested,
+	...Education,
 ]);
 
 const ALLOWED_TAGS = new Set([
