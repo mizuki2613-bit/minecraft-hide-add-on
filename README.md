@@ -11,7 +11,7 @@ Minecraft Java Edition 26.1 ~ 26.3 Snapshot 3
 
 ### Java Edition
 
-1. [Releases](../../releases) ページから最新の`Hide-DataPack.zip` をダウンロードします。
+1. [Releases](../../releases) ページから最新の`Hide-Datapack.zip` をダウンロードします。
 2. ダウンロードした`Hide-DataPack.zip` を Minecraft のワールドフォルダ内の datapacks フォルダに配置します。
 3. ワールドを再読み込みするか、`/reload` コマンドを実行します。
 
