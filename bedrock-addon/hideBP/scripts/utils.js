@@ -18,21 +18,19 @@ export function setActionBar(player, text, warning) {
 
 	state.actionbar = text;
 
-	const message = {
-		translate: text,
-	};
-
 	if (warning) {
+		const message = {
+			translate: text,
+		};
 		player.onScreenDisplay.setActionBar({
 			rawtext: [{ text: "§c§l" }, message],
 		});
-
 		player.playSound("note.snare", {
 			location: player.location,
 			volume: 1,
 			pitch: 1.0,
 		});
 	} else {
-		player.onScreenDisplay.setActionBar(message);
+		player.onScreenDisplay.setActionBar(text);
 	}
 }

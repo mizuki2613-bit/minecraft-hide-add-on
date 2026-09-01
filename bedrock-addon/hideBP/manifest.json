@@ -21,13 +21,13 @@
 			"uuid": "d2c6ed12-dc60-4b65-9e35-4813e60d4d61",
 			"language": "javascript",
 			"entry": "scripts/main.js",
-			"version": "1.0.0"
+			"version": "1.1.0"
 		},
 		{
 			"description": "Hide behind blocks - Behavior Pack",
 			"type": "data",
 			"uuid": "81f82a77-43ea-4b17-9008-ec534bc3ce7b",
-			"version": "1.0.0"
+			"version": "1.1.0"
 		}
 	],
 	"dependencies": [

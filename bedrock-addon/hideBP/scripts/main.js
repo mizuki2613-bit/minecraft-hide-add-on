@@ -1,15 +1,15 @@
-import { world, system, Player } from "@minecraft/server";
+import { world, system } from "@minecraft/server";
 import { getState } from "./state.js";
 import { isHoldingAllowedItem } from "./blocks.js";
 import { blockPos, isSameBlock, setActionBar } from "./utils.js";
-import { updateHiddenPlayer, restoreHideMode } from "./hide.js";
+import { updateHiddenPlayer, restoreHideMode, start_hide } from "./hide.js";
 import "./event.js";
 
-const HIDE_READY = 25;
-const BAR_LENGTH = 6;
+const HIDE_READY = 50;
+const BAR_LENGTH = 10;
 const SHOW_BAR_THRESHOLD = 3;
-const TICK_RATE = 1;
-const COUNT_SPEED = 0.5;
+const TICK_RATE = 2;
+const COUNT_SPEED = 2;
 
 system.runInterval(() => {
 	const players = world.getPlayers();
@@ -40,21 +40,17 @@ system.runInterval(() => {
 		state.lastPosition = pos;
 
 		const isFloating = !player.isOnGround;
-		const item = player
-			.getComponent("equippable")
-			?.getEquipment("Mainhand");
-		const OffhandItem = player
-			.getComponent("equippable")
-			?.getEquipment("Offhand");
-		const isHoldingAllowedBlock = isHoldingAllowedItem(item);
-		const isHoldingAllowedMimicItem =
-			OffhandItem?.typeId === "hide:mimic_block";
+		const equippable = player.getComponent("equippable");
+		const item = equippable?.getEquipment("Mainhand");
+		const OffhandItem = equippable?.getEquipment("Offhand");
+		const isAllowedMainhandItem = isHoldingAllowedItem(item);
+		const isAllowedOffhandItem = OffhandItem?.typeId === "hide:mimic_block";
 
 		if (
 			isMoving ||
 			isFloating ||
-			!isHoldingAllowedBlock ||
-			!isHoldingAllowedMimicItem
+			!isAllowedMainhandItem ||
+			!isAllowedOffhandItem
 		) {
 			state.countdown = 0;
 			state.actionbar = null;
@@ -64,6 +60,7 @@ system.runInterval(() => {
 		}
 		const count = state.countdown;
 		if (count >= HIDE_READY) {
+			// 隠れる処理
 			const currentBlock = player.dimension.getBlock(currentPos);
 			const standingBlock = currentBlock?.below();
 			const headBlock = currentBlock?.above();
@@ -80,29 +77,13 @@ system.runInterval(() => {
 				}
 				continue;
 			}
-			state.countdown = 0;
-			player.setProperty("hide:is_hiding", true);
-			state.hidePosition = currentPos;
-			player.dimension.setBlockType(currentPos, item.typeId);
-			//アンカーをスポーンしてプレイヤーを乗せる
-			const anchor = player.dimension.spawnEntity("hide:anchor", {
-				x: currentPos.x + 0.5,
-				y: currentPos.y,
-				z: currentPos.z + 0.5,
-			});
-			const rideable = anchor.getComponent("minecraft:rideable");
-			rideable?.addRider(player);
-			state.anchor = anchor;
-			player.playSound("block.composter.ready", {
-				location: player.location,
-				volume: 1,
-				pitch: 1.0,
-			});
+			start_hide(player, state, currentPos, item);
 		} else {
+			// アクションバー
 			if (count > SHOW_BAR_THRESHOLD) {
 				const filled = Math.floor((count / HIDE_READY) * BAR_LENGTH);
 				const bar =
-					"§a〇".repeat(filled) + "§8〇".repeat(BAR_LENGTH - filled);
+					"§aO".repeat(filled) + "§8O".repeat(BAR_LENGTH - filled);
 				setActionBar(player, bar, false);
 			}
 		}

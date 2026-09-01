@@ -15,8 +15,7 @@ export function restoreHideMode(player, state) {
 	});
 
 	if (anchors.length === 0) {
-		// Anchorがまだロードされていない可能性があるので、
-		// ここでは解除しない。
+		// Anchorがまだロードされていない可能性があるのでここでは解除しない。
 		return false;
 	}
 
@@ -29,12 +28,6 @@ export function restoreHideMode(player, state) {
 		y: Math.floor(anchor.location.y),
 		z: Math.floor(anchor.location.z),
 	};
-
-	// ワールド再起動時に消えるEffectを再付与
-	player.addEffect("invisibility", 10, {
-		amplifier: 0,
-		showParticles: false,
-	});
 
 	// プレイヤーがAnchorから降りていた場合に再搭乗
 	const rideable = anchor.getComponent("minecraft:rideable");
@@ -74,10 +67,7 @@ export function leaveHideMode(player) {
 }
 
 export function updateHiddenPlayer(player, state) {
-	player.addEffect("invisibility", 10, {
-		amplifier: 0,
-		showParticles: false,
-	});
+	player.addEffect("invisibility", 5, { amplifier: 0, showParticles: false });
 
 	// アンカーが削除された
 	const anchor = state.anchor;
@@ -112,4 +102,25 @@ export function updateHiddenPlayer(player, state) {
 			return;
 		}
 	}
+}
+
+export function start_hide(player, state, currentPos, item) {
+	state.countdown = 0;
+	player.setProperty("hide:is_hiding", true);
+	state.hidePosition = currentPos;
+	player.dimension.setBlockType(currentPos, item.typeId);
+	//アンカーをスポーンしてプレイヤーを乗せる
+	const anchor = player.dimension.spawnEntity("hide:anchor", {
+		x: currentPos.x + 0.5,
+		y: currentPos.y,
+		z: currentPos.z + 0.5,
+	});
+	const rideable = anchor.getComponent("minecraft:rideable");
+	rideable?.addRider(player);
+	state.anchor = anchor;
+	player.playSound("block.composter.ready", {
+		location: player.location,
+		volume: 1,
+		pitch: 1.0,
+	});
 }
