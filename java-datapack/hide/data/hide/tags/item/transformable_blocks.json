@@ -4,6 +4,7 @@
 		"#hide:glass_blocks",
 		"#hide:concrete",
 		"#hide:glazed_terracotta",
+		"#hide:infested",
 		"#minecraft:anvil",
 		"#minecraft:shulker_boxes",
 		"#minecraft:leaves",
@@ -203,6 +204,13 @@
 		"minecraft:mushroom_stem",
 		"minecraft:mycelium",
 		"minecraft:shroomlight",
-		"minecraft:honeycomb_block"
+		"minecraft:honeycomb_block",
+		"minecraft:barrier",
+		"minecraft:spawner",
+		"minecraft:trial_spawner",
+		"minecraft:creaking_heart",
+		"minecraft:dragon_egg",
+		"minecraft:end_portal_frame",
+		"minecraft:vault"
 	]
 }
