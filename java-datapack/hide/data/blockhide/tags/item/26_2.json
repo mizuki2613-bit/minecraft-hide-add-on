@@ -1,0 +1,13 @@
+{
+	"values": [
+		{ "id": "chiseled_cinnabar", "required": false },
+		{ "id": "cinnabar", "required": false },
+		{ "id": "cinnabar_bricks", "required": false },
+		{ "id": "polished_cinnabar", "required": false },
+		{ "id": "polished_sulfur", "required": false },
+		{ "id": "sulfur", "required": false },
+		{ "id": "sulfur_bricks", "required": false },
+		{ "id": "potent_sulfur", "required": false },
+		{ "id": "chiseled_sulfur", "required": false }
+	]
+}

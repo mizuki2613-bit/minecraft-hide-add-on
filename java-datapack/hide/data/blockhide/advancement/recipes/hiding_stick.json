@@ -1,0 +1,18 @@
+{
+	"parent": "recipes/root",
+	"criteria": {
+		"has_stick": {
+			"trigger": "inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": ["stick"]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"recipes": ["blockhide:hiding_stick"]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"type": "crafting_shaped",
+	"category": "equipment",
+	"key": {
+		"#": "stick"
+	},
+	"pattern": ["  #", " # ", "#  "],
+	"result": {
+		"id": "clock",
+		"components": {
+			"item_name": {
+				"text": "Transform into block",
+				"bold": true
+			},
+			"item_model": "stick",
+			"rarity": "epic",
+			"enchantment_glint_override": true,
+			"custom_data": { "blockhide:transform_item": true },
+			"max_stack_size": 1,
+			"tool": {
+				"can_destroy_blocks_in_creative": false,
+				"rules": []
+			}
+		}
+	}
+}
